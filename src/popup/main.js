@@ -1,1 +1,4 @@
-document.body.innerHTML = "<h1>Your popup content here</h1>";
+import { render } from "react-dom";
+import App from "./App";
+
+render(App, document.querySelector("#root"));
