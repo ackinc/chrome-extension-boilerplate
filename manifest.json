@@ -27,5 +27,6 @@
     "32": "assets/images/logo-32.png",
     "48": "assets/images/logo-48.png",
     "128": "assets/images/logo-128.png"
-  }
+  },
+  "permissions": ["storage"]
 }
