@@ -20,4 +20,9 @@ module.exports = {
     }),
     new CopyWebpackPlugin(["manifest.json", { from: "assets", to: "assets" }]),
   ],
+  resolve: {
+    alias: {
+      assets: path.resolve(__dirname, "assets"),
+    },
+  },
 };
