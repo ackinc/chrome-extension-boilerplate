@@ -1,0 +1,7 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Anirudh Nimmagadda <anirudh.nimmagadda@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Chrome Extension Boilerplate",
+  "version": "0.0.1",
+  "description": "Chrome Extension Boilerplate",
+  "manifest_version": 2
+}
