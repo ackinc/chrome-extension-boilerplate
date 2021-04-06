@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.jsx$/,
-        loaders: [
+        use: [
           {
             loader: "babel-loader",
             options: {
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpg|jpeg|gif|woff2?|eot|ttf|svg)$/i,
@@ -42,7 +42,9 @@ module.exports = {
       template: "src/popup/index.html",
       chunks: ["popup"],
     }),
-    new CopyWebpackPlugin(["manifest.json", { from: "assets", to: "assets" }]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "assets", to: "assets" }, { from: "manifest.json" }],
+    }),
   ],
   resolve: {
     alias: {
@@ -50,4 +52,5 @@ module.exports = {
     },
     extensions: [".js", ".jsx"],
   },
+  mode: "development",
 };
